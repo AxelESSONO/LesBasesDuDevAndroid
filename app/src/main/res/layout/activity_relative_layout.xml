@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/red_color"
+        android:layout_above="@id/textView1"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#269E1D"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#D5A735"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#1D1F9E"
+        android:layout_toStartOf="@id/textView1"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#C86214"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#251C1C"
+        android:layout_alignParentStart="true"/>
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#218F83"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Hello"
+        android:ellipsize="end"
+        android:elevation="5dp"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/red_color"
+        android:insetLeft="0"
+        android:insetTop="0"
+        android:insetRight="0"
+        android:insetBottom="0"
+        android:text="Material Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="4dp" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
